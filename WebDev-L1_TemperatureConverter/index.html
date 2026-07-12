@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Temperature Converter</title>
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+
+        <!-- Main Container -->
+
+        <div class="container">
+
+            <header>
+
+                <h1>Temperature Converter</h1>
+
+                <p>
+                    Convert temperatures easily between Celsius,
+                    Fahrenheit and Kelvin.
+                </p>
+
+            </header>
+
+            <section class="converter-card">
+
+                <h2>Temperature Converter</h2>
+
+                <div class="input-group">
+
+                    <label for="temperature">
+
+                        Enter Temperature
+
+                    </label>
+
+                    <input
+                        type="text"
+                        id="temperature"
+                        placeholder="Example : 25">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="unit">
+
+                        Select Input Unit
+
+                    </label>
+
+                    <select id="unit">
+
+                        <option value="celsius">
+                            Celsius (°C)
+                        </option>
+
+                        <option value="fahrenheit">
+                            Fahrenheit (°F)
+                        </option>
+
+                        <option value="kelvin">
+                            Kelvin (K)
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button id="convertBtn">
+
+                        Convert
+
+                    </button>
+
+                    <button id="resetBtn">
+
+                        Reset
+
+                    </button>
+
+                </div>
+
+                <div id="errorMessage">
+
+                </div>
+
+                <div class="result-section">
+
+                    <h3>Converted Temperature</h3>
+
+                    <div class="result-container">
+
+                        <div class="result-card">
+
+                            <h4>Celsius</h4>
+
+                            <p id="celsiusResult">
+                                --
+                            </p>
+
+                        </div>
+
+                        <div class="result-card">
+
+                            <h4>Fahrenheit</h4>
+
+                            <p id="fahrenheitResult">
+                                --
+                            </p>
+
+                        </div>
+
+                        <div class="result-card">
+
+                            <h4>Kelvin</h4>
+
+                            <p id="kelvinResult">
+                                --
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>Conversion Formula</h3>
+
+                    <ul>
+
+                        <li>
+                            °C → °F = (°C × 9/5) + 32
+                        </li>
+
+                        <li>
+                            °F → °C = (°F − 32) × 5/9
+                        </li>
+
+                        <li>
+                            K → °C = K − 273.15
+                        </li>
+
+                        <li>
+                            °C → K = °C + 273.15
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+            <footer>
+
+                <p>
+                    Developed using HTML, CSS and JavaScript
+                </p>
+
+            </footer>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
